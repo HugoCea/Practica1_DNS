@@ -85,4 +85,4 @@ Entramos en el cliente y usamo "ifconfig" para ver su ip, la cual es 10.20.0.2 q
 
 Y con esa ip vamos al servidor y hacemos un ping.
 
-![Si lees esto es que el link que use no funciona, por lo que para ver el ping entra en la imagen del Git](/home/hugo/Documentos/SRI/practica1/Ping.png)
+![Si lees esto es que el link que use no funciona, por lo que para ver el ping entra en la imagen del Git]([/home/hugo/Documentos/SRI/practica1/Ping.png](https://github.com/HugoCea/Practica1_DNS/blob/master/Ping.png))
