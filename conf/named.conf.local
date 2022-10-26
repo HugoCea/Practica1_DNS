@@ -1,0 +1,9 @@
+
+zone "asirpractica1.com." {
+        type master;
+        file "/var/lib/bind/db.asirpractica1.com";
+        notify explicit;
+        allow-query {
+                any;
+                };
+    };

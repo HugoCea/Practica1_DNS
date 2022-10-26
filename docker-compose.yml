@@ -1,0 +1,26 @@
+version: '3.3'
+services:
+  asir_bind9_practica:
+    container_name: asir_bind9_practica
+    image: internetsystemsconsortium/bind9:9.16
+    ports:
+      - 5300:53/udp
+      - 5300:53/tcp
+    networks:
+      bind9_subnetasir:
+        ipv4_address: 10.28.0.254
+    volumes:
+      - /home/hugo/Documentos/SRI/practica1/conf:/etc/bind
+      - /home/hugo/Documentos/SRI/practica1/zonas:/var/lib/bind
+  asir_cliente_practica:
+    container_name: asir_cliente_practica
+    image: alpine
+    networks:
+      - bind9_subnetasir
+    stdin_open: true
+    tty: true
+    dns:
+      -10.28.0.254
+networks:
+  bind9_subnetasir:
+    external: true
